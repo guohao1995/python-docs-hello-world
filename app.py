@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
     return "Hello, World! Github"
 
-@app.route('/api/headers')
+@app.route("/api/headers")
 def headers():
     json_res = jsonify({ "message": "Adding custom header.." })
     res = make_response(json_res)
