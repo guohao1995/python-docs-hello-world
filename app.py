@@ -9,5 +9,5 @@ def hello():
 def headers():
     json_res = jsonify({ "message": "Adding custom header.." })
     res = make_response(json_res)
-    res.headers['X-Frame-Options'] = 'DENY'
+    res.headers['X-Frame-Options'] = 'SAMEORIGIN'
     return res
